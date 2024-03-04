@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'inner-page.html' %}
+
 {% block body %}
 <h2>Welcome {{ member.username }} . You are logged in as an Admin</h2>
-<a href="{% url 'upload' %} " class="btn btn-warning"></a>
+<a href="{% url 'upload' %}" class="btn btn-warning">Upload</a>
 
 
 {% endblock %}
-</body>
-</html>
